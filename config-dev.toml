@@ -2,7 +2,7 @@
 baseurl = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "Okkur - Syna"
+title = "Vamsi"
 theme = "syna"
 themesDir = "../.."
 enableGitInfo = true

@@ -1,7 +1,7 @@
 baseurl: /
 languageCode: en-us
 defaultContentLanguage: en
-title: Okkur - Syna
+title: Vamsi
 theme: syna
 enableGitInfo: yes
 version: 0.17.4
@@ -58,10 +58,10 @@ menu:
       url: /about
       weight: 10
   footer:
-    - name: Getting Started
+    - name: Getting Begin
       url: https://syna.okkur.org/demo
       weight: 10
-    - name: About Okkur Labs
+    - name: About Vamsi
       url: https://about.okkur.org/
       weight: 20
   footer_social:
