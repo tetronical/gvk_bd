@@ -73,12 +73,12 @@ menu:
     - name: Home
       url: /
       weight: 10
-    - name: Fragments
+    - name: About me
       url: /fragments
       weight: 20
-    - name: Docs
+    - name: Education
       url: /docs
       weight: 30
-    - name: About
+    - name: Extra
       url: /about
       weight: 40
