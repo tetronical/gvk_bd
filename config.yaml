@@ -1,122 +1,84 @@
-baseURL: https://examplesite.com
-title: Meghna
-theme: meghna-hugo
-paginate: '6'
-summaryLength: '15'
-disqusShortname: ''
-disableLanguages: []
+baseurl: /
+languageCode: en-us
+defaultContentLanguage: en
+title: Okkur - Syna
+theme: syna
+enableGitInfo: yes
+version: 0.17.4
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm
+ignorefiles: content/dev/.*
+googleAnalytics: ''
+outputs:
+  home:
+    - HTML
+    - JSON
+frontmatter:
+  date:
+    - date
+    - lastmod
+  lastmod:
+    - lastmod
+    - :git
+    - date
+markup:
+  goldmark:
+    renderer:
+      unsafe: yes
 params:
-  author: Themefisher
-  cookies:
-    enable: no
-    expire_days: 2
-  description: Responsive Multipurpose Parallax Hugo Template
-  google_analytics_id: ''
-  logo: images/logo.png
-  map:
-    enable: no
-    gmap_api: https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ
-    map_latitude: '51.5223477'
-    map_longitude: '-0.1622023'
-    map_marker: images/marker.png
-  plugins:
-    css:
-      - link: plugins/bootstrap/bootstrap.min.css
-      - link: plugins/themify-icons/themify-icons.css
-      - link: plugins/magnific-popup/magnific-popup.css
-      - link: plugins/slick/slick.css
-      - link: https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap
-    js:
-      - link: plugins/jquery/jquery.min.js
-      - link: plugins/bootstrap/bootstrap.min.js
-      - link: plugins/slick/slick.min.js
-      - link: plugins/shuffle/shuffle.min.js
-      - link: plugins/magnific-popup/jquery.magnific-popup.min.js
-      - link: plugins/lazy-load/lozad.min.js
-      - link: plugins/google-map/map.js
-  post_share: yes
-  preloader:
-    enable: no
-    preloader: images/logo.png
-  social:
-    - icon: ti-facebook
-      link: '#'
-    - icon: ti-twitter-alt
-      link: '#'
-    - icon: ti-youtube
-      link: '#'
-    - icon: ti-linkedin
-      link: '#'
-    - icon: ti-dribbble
-      link: '#'
-    - icon: ti-pinterest
-      link: '#'
-Languages:
-  en:
-    contentDir: content/english
-    copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com)
-      & Developed by [Gethugothemes](https://gethugothemes.com)
-    home: Home
-    languageCode: en-us
-    languageName: En
-    menu:
-      main:
-        - name: about
-          url: '#about'
-          weight: 1
-        - name: services
-          url: '#services'
-          weight: 2
-        - name: portfolio
-          url: '#portfolio'
-          weight: 3
-        - name: team
-          url: '#team'
-          weight: 4
-        - name: pricing
-          url: '#pricing'
-          weight: 5
-        - name: blog
-          url: '#blog'
-          weight: 6
-        - name: contact
-          url: '#contact'
-          weight: 7
-        - name: themefisher
-          url: https://themefisher.com/
-          weight: 8
-    weight: 1
-  fr:
-    contentDir: content/french
-    copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com)
-      & Developed by [Gethugothemes](https://gethugothemes.com)
-    home: Accueil
-    languageCode: fr-fr
-    languageName: Fr
-    menu:
-      main:
-        - name: sur
-          url: '#about'
-          weight: 1
-        - name: un service
-          url: '#services'
-          weight: 2
-        - name: portefeuille
-          url: '#portfolio'
-          weight: 3
-        - name: équipe
-          url: '#team'
-          weight: 4
-        - name: tarification
-          url: '#pricing'
-          weight: 5
-        - name: blog
-          url: '#blog'
-          weight: 6
-        - name: contact
-          url: '#contact'
-          weight: 7
-        - name: themefisher
-          url: https://themefisher.com/
-          weight: 8
-    weight: 2
+  analytics:
+    piwik: {}
+  colors:
+    danger: '#dc1200'
+    dark: '#343a40'
+    info: '#00c9dc'
+    light: '#f8f9fa'
+    primary: '#00838F'
+    secondary: '#868e96'
+    success: '#008f54'
+    warning: '#fdf314'
+  custom:
+    favicon: favicon.ico
+    favicon_ico_sizes: 16x16 32x32
+    favicon_png: favicon.png
+    favicon_svg: favicon.svg
+  debug: yes
+  description: Open Source Theme for your next project
+  fontawesome:
+    disabled: no
+    pro: no
+  name: Okkur Labs
+  style: {}
+  unsafeEvents: yes
+menu:
+  copyright_footer:
+    - name: About Us
+      url: /about
+      weight: 10
+  footer:
+    - name: Getting Started
+      url: https://syna.okkur.org/demo
+      weight: 10
+    - name: About Okkur Labs
+      url: https://about.okkur.org/
+      weight: 20
+  footer_social:
+    - name: github
+      pre: fab fa-github fa-stack-2x
+      url: https://git.okkur.org/syna
+      weight: 30
+  main:
+    - name: Home
+      url: /
+      weight: 10
+    - name: Fragments
+      url: /fragments
+      weight: 20
+    - name: Docs
+      url: /docs
+      weight: 30
+    - name: About
+      url: /about
+      weight: 40
